@@ -8,7 +8,8 @@ import { UsersdashboardComponent } from './usersdashboard/usersdashboard.compone
 import { FormsModule } from '@angular/forms';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { CheckformService } from './checkform.service';
-
+import { AuthService } from './auth.service';
+import { HttpModule } from '@angular/http';
 
 
 const appRoute: Routes = [
@@ -27,9 +28,10 @@ const appRoute: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoute),
     FormsModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    HttpModule
   ],
-  providers: [CheckformService],
+  providers: [CheckformService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

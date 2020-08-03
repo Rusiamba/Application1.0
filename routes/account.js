@@ -7,7 +7,7 @@ const config = require('../config/db');
 
 router.get('/auth', (req, res) => {
     res.send('Authentication page');
-});
+}); 
 
 router.post('/auth', (req, res) => {
     const login = req.body.login;

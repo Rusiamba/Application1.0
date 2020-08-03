@@ -29,7 +29,7 @@
             </div>
             <div class="sign-up__row">
               <div class="sign-up__column">
-                <input id="email" class="sign-up__field_email" type="email"  placeholder="Email" required> 
+                <input id="email" class="sign-up__field_email" type="email" [(ngModel)]="email" placeholder="Email" required> 
               </div>
             </div>
             <div class="sign-up__row_three">
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="sign-up__row">
-              <button class="sign-up__button"><span class="sign-up__button-label">Sign Up</span></button>
+              <button class="sign-up__button" type="submit"><span class="sign-up__button-label">Sign Up</span></button>
             </div>
           </form>
         </div>
